@@ -13,6 +13,8 @@
 		398FAAAD2ACC689000505987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 398FAAAC2ACC689000505987 /* Assets.xcassets */; };
 		398FAAB02ACC689000505987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 398FAAAE2ACC689000505987 /* LaunchScreen.storyboard */; };
 		398FAAB82ACC691A00505987 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 398FAAB72ACC691A00505987 /* .gitignore */; };
+		398FAABB2ACC69D300505987 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 398FAABA2ACC69D300505987 /* DGCharts */; };
+		398FAABE2ACC6A3500505987 /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398FAABD2ACC6A3500505987 /* UIViewControllerPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		398FAAAF2ACC689000505987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		398FAAB12ACC689000505987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		398FAAB72ACC691A00505987 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		398FAABD2ACC6A3500505987 /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398FAABB2ACC69D300505987 /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,11 +64,20 @@
 				398FAAA32ACC688F00505987 /* AppDelegate.swift */,
 				398FAAA52ACC688F00505987 /* SceneDelegate.swift */,
 				398FAAA72ACC688F00505987 /* ViewController.swift */,
+				398FAABC2ACC6A2600505987 /* Utils */,
 				398FAAAC2ACC689000505987 /* Assets.xcassets */,
 				398FAAAE2ACC689000505987 /* LaunchScreen.storyboard */,
 				398FAAB12ACC689000505987 /* Info.plist */,
 			);
 			path = "chart-practice";
+			sourceTree = "<group>";
+		};
+		398FAABC2ACC6A2600505987 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				398FAABD2ACC6A3500505987 /* UIViewControllerPreview.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +96,9 @@
 			dependencies = (
 			);
 			name = "chart-practice";
+			packageProductDependencies = (
+				398FAABA2ACC69D300505987 /* DGCharts */,
+			);
 			productName = "chart-practice";
 			productReference = 398FAAA02ACC688F00505987 /* chart-practice.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 398FAA972ACC688F00505987;
+			packageReferences = (
+				398FAAB92ACC69D300505987 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 398FAAA12ACC688F00505987 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				398FAAA82ACC688F00505987 /* ViewController.swift in Sources */,
+				398FAABE2ACC6A3500505987 /* UIViewControllerPreview.swift in Sources */,
 				398FAAA42ACC688F00505987 /* AppDelegate.swift in Sources */,
 				398FAAA62ACC688F00505987 /* SceneDelegate.swift in Sources */,
 			);
@@ -355,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		398FAAB92ACC69D300505987 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		398FAABA2ACC69D300505987 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 398FAAB92ACC69D300505987 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 398FAA982ACC688F00505987 /* Project object */;
 }

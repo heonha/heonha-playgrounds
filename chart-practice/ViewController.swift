@@ -6,12 +6,23 @@
 //
 
 import UIKit
+import Charts
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    private func createChart() {
+        // create bar chart
+        
+        // configure axis
+        
+        // configure legend
+        
+        // supply data
+        
     }
 
 
