@@ -8,7 +8,7 @@
 import UIKit
 import DGCharts
 
-class ViewController: UIViewController {
+class BarChartViewController: UIViewController {
     
     // MARK: Main View
     private lazy var barChartView: BarChartView = createChart()
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: - Chart View DELEGATE
-extension ViewController: ChartViewDelegate {
+extension BarChartViewController: ChartViewDelegate {
     
 }
 
@@ -99,7 +99,7 @@ import SwiftUI
 struct ViewController_Previews: PreviewProvider {
     static var previews: some View {
         UIViewControllerPreview {
-            ViewController()
+            BarChartViewController()
         }
         .ignoresSafeArea()
     }

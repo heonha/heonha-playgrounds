@@ -9,20 +9,20 @@
 #if canImport(SwiftUI) && DEBUG
 import SwiftUI
 
-struct UIViewControllerPreview<ViewController: UIViewController>: UIViewControllerRepresentable {
+struct UIViewControllerPreview<BarChartViewController: UIViewController>: UIViewControllerRepresentable {
     
-    let viewController: ViewController
+    let viewController: BarChartViewController
     
-    init(_ builder: @escaping () -> ViewController) {
+    init(_ builder: @escaping () -> BarChartViewController) {
         viewController = builder()
     }
     
     // MARK: - UIViewControllerRepresentable
-    func makeUIViewController(context: Context) -> ViewController {
+    func makeUIViewController(context: Context) -> BarChartViewController {
         viewController
     }
     
-    func updateUIViewController(_ uiViewController: ViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: BarChartViewController, context: Context) {
         
     }
 }
