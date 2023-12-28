@@ -1,5 +1,5 @@
 //
-//  MainTabBarController.swift
+//  MainChartViewController.swift
 //  chart-practice
 //
 //  Created by HeonJin Ha on 10/4/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MainTabBarController: UITabBarController {
+final class MainChartViewController: UITabBarController {
     
     private let barChartVC = BarChartViewController()
     

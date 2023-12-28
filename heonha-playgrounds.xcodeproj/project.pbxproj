@@ -14,7 +14,7 @@
 		398FAAB02ACC689000505987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 398FAAAE2ACC689000505987 /* LaunchScreen.storyboard */; };
 		398FAAB82ACC691A00505987 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 398FAAB72ACC691A00505987 /* .gitignore */; };
 		398FAABE2ACC6A3500505987 /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398FAABD2ACC6A3500505987 /* UIViewControllerPreview.swift */; };
-		398FAAC02ACC715B00505987 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398FAABF2ACC715B00505987 /* MainTabBarController.swift */; };
+		398FAAC02ACC715B00505987 /* MainChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398FAABF2ACC715B00505987 /* MainChartViewController.swift */; };
 		39A14DCE2B3D44BE00F64F22 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 39A14DCD2B3D44BE00F64F22 /* DGCharts */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		398FAAB12ACC689000505987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		398FAAB72ACC691A00505987 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		398FAABD2ACC6A3500505987 /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
-		398FAABF2ACC715B00505987 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		398FAABF2ACC715B00505987 /* MainChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainChartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 			children = (
 				398FAAA32ACC688F00505987 /* AppDelegate.swift */,
 				398FAAA52ACC688F00505987 /* SceneDelegate.swift */,
-				398FAAC12ACC718000505987 /* Presentations */,
+				39A14DCF2B3D451A00F64F22 /* DGCharts */,
 				398FAABC2ACC6A2600505987 /* Utils */,
 				398FAAAC2ACC689000505987 /* Assets.xcassets */,
 				398FAAAE2ACC689000505987 /* LaunchScreen.storyboard */,
@@ -82,21 +82,21 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		398FAAC12ACC718000505987 /* Presentations */ = {
-			isa = PBXGroup;
-			children = (
-				398FAABF2ACC715B00505987 /* MainTabBarController.swift */,
-				398FAAC22ACC718E00505987 /* Charts */,
-			);
-			path = Presentations;
-			sourceTree = "<group>";
-		};
 		398FAAC22ACC718E00505987 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
 				398FAAA72ACC688F00505987 /* BarChartViewController.swift */,
 			);
 			path = Charts;
+			sourceTree = "<group>";
+		};
+		39A14DCF2B3D451A00F64F22 /* DGCharts */ = {
+			isa = PBXGroup;
+			children = (
+				398FAABF2ACC715B00505987 /* MainChartViewController.swift */,
+				398FAAC22ACC718E00505987 /* Charts */,
+			);
+			path = DGCharts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				398FAAC02ACC715B00505987 /* MainTabBarController.swift in Sources */,
+				398FAAC02ACC715B00505987 /* MainChartViewController.swift in Sources */,
 				398FAAA82ACC688F00505987 /* BarChartViewController.swift in Sources */,
 				398FAABE2ACC6A3500505987 /* UIViewControllerPreview.swift in Sources */,
 				398FAAA42ACC688F00505987 /* AppDelegate.swift in Sources */,

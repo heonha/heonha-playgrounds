@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.backgroundColor = .systemBackground
         
-        let rootVC = MainTabBarController()
+        let rootVC = MainChartViewController()
         
         window?.rootViewController = rootVC
         window?.makeKeyAndVisible()
