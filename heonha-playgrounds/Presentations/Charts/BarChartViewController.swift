@@ -93,8 +93,10 @@ extension BarChartViewController: ChartViewDelegate {
     
 }
 
+// MARK: - Previewer
 #if DEBUG
 import SwiftUI
+import DGCharts
 
 struct ViewController_Previews: PreviewProvider {
     static var previews: some View {
